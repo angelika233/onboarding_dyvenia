@@ -60,4 +60,5 @@ async def delete_todo(id: int, valid: bool = Depends(validate)):
     except:
         raise HTTPException(status_code=404, detail="Todo Not Found")
 
+        
 #python -m uvicorn main:app --reload
